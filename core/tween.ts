@@ -102,17 +102,4 @@ export class Tween {
 
     gsap.to(target, to);
   }
-
-  // public static wait(time: number, onComplete: any = undefined): void {
-  //   gsap.to(
-  //     {
-  //       val: 0,
-  //     },
-  //     {
-  //       val: 1,
-  //       duration: time,
-  //       onComplete: onComplete,
-  //     },
-  //   )
-  // }
 }

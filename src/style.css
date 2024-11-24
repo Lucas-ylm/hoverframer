@@ -85,22 +85,10 @@ select {
   border:none;
 }
 
-.l-line span {
-  /* color: #FFF; */
-  /* border-radius: 50%; */
-  /* background-color: #FFF; */
-  /* display: inline-block; */
-  /* text-decoration: underline; */
-  /* background-color: #FFF; */
-}
-
 .l-line.-last span {
   color: #000;
   background-color: transparent;
 }
-
-
-
 
 .l-debug {
   position: fixed;
