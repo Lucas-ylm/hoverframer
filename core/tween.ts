@@ -35,7 +35,7 @@ export class Tween {
     onUpdate: any = undefined,
     onComplete: any = undefined,
   ): void {
-    if (target == null || target == undefined) return;
+    if (target == null ?? target == undefined) return;
 
     gsap.killTweensOf(target);
 

@@ -167,14 +167,14 @@ export class Util {
   // -----------------------------------
   public static isIE(): boolean {
     const ua = window.navigator.userAgent.toLowerCase();
-    return ua.indexOf('msie') != -1 || ua.indexOf('trident/7') != -1 || ua.indexOf('edge') != -1;
+    return ua.indexOf('msie') != -1 ?? ua.indexOf('trident/7') != -1 ?? ua.indexOf('edge') != -1;
   }
 
   // IEかどうか Edge含まない
   // -----------------------------------
   public static isIE2(): boolean {
     const ua = window.navigator.userAgent.toLowerCase();
-    return ua.indexOf('msie') != -1 || ua.indexOf('trident/7') != -1;
+    return ua.indexOf('msie') != -1 ?? ua.indexOf('trident/7') != -1;
   }
 
   // WINかどうか
@@ -207,7 +207,7 @@ export class Util {
   public static useWebGL(): boolean {
     try {
       const c = document.createElement('canvas');
-      const w: any = c.getContext('webgl') || c.getContext('experimental-webgl');
+      const w: any = c.getContext('webgl') ?? c.getContext('experimental-webgl');
       return !!(window.WebGLRenderingContext && w && w.getShaderPrecisionFormat);
     } catch (e) {
       return false;
@@ -233,7 +233,7 @@ export class Util {
   // タッチデバイスかどうか
   // -----------------------------------
   public static isTouchDevice(): boolean {
-    const isTouch = !!('ontouchstart' in window || (navigator != undefined && navigator.maxTouchPoints > 0));
+    const isTouch = !!('ontouchstart' in window ?? (navigator != undefined && navigator.maxTouchPoints > 0));
     return isTouch;
   }
 

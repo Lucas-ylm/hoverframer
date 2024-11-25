@@ -5,7 +5,7 @@ export class Func {
   constructor() {}
 
   public static ratio(): number {
-    return window.devicePixelRatio || 1;
+    return window.devicePixelRatio ?? 1;
   }
 
   public static px(num: number): string {

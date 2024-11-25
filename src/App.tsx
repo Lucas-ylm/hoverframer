@@ -5,8 +5,14 @@ const App: React.FC = () => {
   return (
     <div>
       <LineComponent />
-      <h1>some tile</h1>
-      <p>some text.</p>
+      <div className='lol'>
+        <h1>some title</h1>
+        <p>some text.</p>
+      </div>
+      <div>
+        <h1>another title</h1>
+        <p>another random text.</p>
+      </div>
     </div>
   );
 };

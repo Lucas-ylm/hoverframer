@@ -112,7 +112,7 @@ export class Display {
 
   public getOffset(el: Element): any {
     const rect = el.getBoundingClientRect();
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollTop = window.pageYOffset ?? document.documentElement.scrollTop;
     return {
       y: rect.top + scrollTop,
       x: rect.left,
