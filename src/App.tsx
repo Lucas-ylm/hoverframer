@@ -10,8 +10,8 @@ const App: React.FC = () => {
         <p>some text.</p>
       </div>
       <div>
-        <h1>another title</h1>
-        <p>another random text.</p>
+        <h1>another loooooooooooong title</h1>
+        <p>another randoooooooooom text.</p>
       </div>
     </div>
   );

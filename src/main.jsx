@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client'; // React 18+ import
 import App from './App';
-import './style.css';
+import './style.scss';
 
 const wrapper = document.querySelector('.l-wrapper');
 

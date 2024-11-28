@@ -20,6 +20,11 @@ html, body {
   margin-bottom: 150vh;
 }
 
-div {
-  margin-bottom: 100px;
+p, h1, h2, h3 {
+  visibility: hidden;
+  height: 0;
+  
+  .-inner {
+    visibility: visible;
+  }
 }
